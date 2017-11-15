@@ -40,5 +40,5 @@ var String = document.getElementById("String");
 writer.addEventListener("input", react);
 
 function react() {
-    console,log(react());
+    console,log(react);
 }
