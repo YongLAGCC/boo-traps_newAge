@@ -1,10 +1,12 @@
 body {
     margin: 0; 
+  
 }
 nav {
     background-color: hotpink; 
     color: black; 
-    padding: 15px 0; 
+    padding: 30px 0; 
+  
 }
 nav .brandLogo{
     font-size: 1.25rem; 
@@ -30,29 +32,23 @@ nav .firstContainer.brandAdd{
  }
  .firstContainer{
      width: 100%; 
-     max-width: 997px; 
+     max-width: 100%; 
      margin: 0; 
+     position: fixed;   
  }
  pageHeader {
-    margin-top: 0; 
-    background-image: url()
-    height 100vh;
-    min-height: 775px;
-}
+    background-image: url(https://blackrockdigital.github.io/startbootstrap-creative/img/header.jpg)
+    
+
+    }
 pageHeader .row{
     text-align: center; 
-    size: 3rem; 
-    font-family: sans-serif; 
-
+    height: 500px;
+    margin: 0; 
+    font-size: 3rem; 
+    font-family: sans-serif;
 }
-pageHeader button{
-font-size:11px; 
-padding: 15px 45px; 
-text-transform: uppercase;
-border-radius: 300px; 
-border-color:#fff;
-background-color: none; 
-
-
+.imagePhone {
+    background-image: url(https://blackrockdigital.github.io/startbootstrap-creative/img/header.jpg)
+    
 }
-
