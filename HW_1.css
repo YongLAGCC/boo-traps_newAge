@@ -1,0 +1,21 @@
+body {
+    width:100%; 
+    max-width: 100%; 
+    background-color:lightskyblue;
+}
+
+nav{
+    width:100%; 
+    max-width: 100%; 
+    color: #000;
+    text-align:center;
+    margin: 15px;
+}
+.container3 {
+    
+    max-width: 800px; 
+    padding: 25% auto; 
+    text-align: center; 
+    background-color: lightcyan;
+    min-height: 500px；
+}

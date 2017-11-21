@@ -1,7 +1,5 @@
 
 
-
-
 // var range = 1000; 
 
 // function evenNum() {
@@ -86,3 +84,48 @@ function act() {
     var recall = writers.value; 
     anotherWriters.value=recall;
 }
+
+// // Homework II
+// 1. factorial
+
+var j=6; 
+var factorial=1 , temp =j;
+do{
+    factorial =factorial*j;
+    j--;
+    
+} while(j>=2)
+console.log("The number of ",j," factorial is: ",factorial)
+
+
+console.log("HW2: Palindrome ~~~~~~~~~~~~~~~~~~~~~~```")
+
+
+function palindrome(input) {
+    var checkPaLin = input;
+    var leng = checkPaLin.length, temp = input; 
+    var firstHalf = leng/2; 
+    var lastHalf=leng/2;
+    
+    //  console.log('leng: ',leng)
+
+     console.log('first half length: ',firstHalf)
+    for(var i=0; i< firstHalf; i++)
+    {
+        if (leng <2){
+            alert("This letter is not Palindrome!" )
+            break;
+        }
+
+        else if( checkPaLin.charAt(i) ==  checkPaLin.charAt(leng-1-i)) {
+            continue; 
+        } else {
+            console.log("It is not Palindrome")
+            return "-1";
+          
+        }
+    }
+    return checkPaLin;
+
+} console.log(palindrome('a'))
+
