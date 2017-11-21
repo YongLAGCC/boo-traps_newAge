@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <meta charset="utf-8">
+    <title>Practice page!</title>
+    
+     <link rel="stylesheet" href="HW_1.css">       
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css" />
+</header>
+
+<body>
+
+<div class = "tab-panels"> 
+    <ul class="tabs">
+        <li rel="panel1" class = "active">panel1</li>
+        <li rel="panel2">panel2</li>
+        <li rel="panel3">panel3</li>
+        <li rel="panel4">panel4</li>
+    </ul>
+
+    <div id = "tab-panel1" class = "panel active"> 
+          
+               contenet1<br/>
+               contenet1<br/>
+               contenet1<br/>
+               contenet1<br/>
+               contenet1<br/>
+    </div>
+    <div id = "panel2" class = "panel"> 
+            contenet2<br/>
+            contenet2<br/>
+            contenet2<br/>
+            contenet2<br/>
+            contenet2<br/>
+
+    </div>
+    <div id = "panel3" class = "panel"> 
+            contenet3<br/>
+            contenet3<br/>
+            contenet3<br/>
+            contenet3<br/>
+            contenet3<br/>
+
+    </div>
+    <div id = "panel4" class = "panel"> 
+            contenet4<br/>
+            contenet2<br/>
+            contenet4<br/>
+            contenet4<br/>
+            contenet4<br/>
+
+    </div>
+</div>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css" />
+
+<script>
+
+$(function() {
+
+    $('.tab-panels .tabs li'). on('click', function() {
+
+        // which panels to show
+        var $panelToShow = $(this). attr('rel');
+        // hide current panel
+        $('.table-panels .panel.active').slideUp(300,function() {
+            $(this).removeClass('active');
+            $('#+panelToShow').slideDown(300, function(){
+                $(this).addClass('active');
+        });
+        // show new panel
+
+    });
+
+    })
+})
+
+
+
+</script>
+</body>
+</html>
